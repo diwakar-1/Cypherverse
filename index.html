@@ -106,13 +106,25 @@
     }
 
     @keyframes spinLoader {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     @keyframes pulseLoader {
-      0%, 100% { box-shadow: 0 0 0 rgba(230, 57, 70, 0.25); }
-      50% { box-shadow: 0 0 35px rgba(230, 57, 70, 0.4); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 rgba(230, 57, 70, 0.25);
+      }
+
+      50% {
+        box-shadow: 0 0 35px rgba(230, 57, 70, 0.4);
+      }
     }
 
     /* WEB CANVAS */
@@ -146,21 +158,29 @@
       transition: all 0.3s;
       white-space: nowrap;
     }
+
     .btn-spin:hover {
-      background: rgba(69,123,157,0.15);
+      background: rgba(69, 123, 157, 0.15);
       border-color: #64b5f6;
       color: #64b5f6;
-      box-shadow: 0 0 18px rgba(69,123,157,0.45);
+      box-shadow: 0 0 18px rgba(69, 123, 157, 0.45);
       transform: translateY(-2px);
     }
+
     .btn-spin .spin-icon {
       display: inline-block;
       animation: spinIcon 2.2s linear infinite;
       font-style: normal;
     }
+
     @keyframes spinIcon {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* ===================== NAVBAR ===================== */
@@ -214,8 +234,13 @@
       transition: width 0.3s;
     }
 
-    .nav-links a:hover { color: var(--red); }
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover {
+      color: var(--red);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
 
     /* ===================== HERO ===================== */
     #hero {
@@ -282,8 +307,15 @@
     }
 
     @keyframes floatDesktop {
-      0%, 100% { transform: translateY(-50%) rotate(0deg); }
-      50% { transform: translateY(calc(-50% - 20px)) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(calc(-50% - 20px)) rotate(5deg);
+      }
     }
 
     .spider-3d {
@@ -363,8 +395,15 @@
     }
 
     @keyframes shimmer {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
     }
 
     .hero-sub {
@@ -413,7 +452,9 @@
       text-transform: uppercase;
     }
 
-    .venue-text span { color: var(--light-blue); }
+    .venue-text span {
+      color: var(--light-blue);
+    }
 
     .hero-btns {
       display: flex;
@@ -452,7 +493,10 @@
       transition: transform 0.4s;
     }
 
-    .btn-primary:hover::before { transform: translateX(150%) skew(-15deg); }
+    .btn-primary:hover::before {
+      transform: translateX(150%) skew(-15deg);
+    }
+
     .btn-primary:hover {
       transform: translateY(-3px);
       box-shadow: 0 15px 40px rgba(230, 57, 70, 0.5);
@@ -474,15 +518,38 @@
     }
 
     @keyframes ctaBeat {
-      0%, 100% { filter: brightness(1); }
-      45% { filter: brightness(1.08); }
-      58% { filter: brightness(1.16); }
+
+      0%,
+      100% {
+        filter: brightness(1);
+      }
+
+      45% {
+        filter: brightness(1.08);
+      }
+
+      58% {
+        filter: brightness(1.16);
+      }
     }
 
     @keyframes ctaRing {
-      0%, 100% { opacity: 0; transform: scale(0.98); }
-      45% { opacity: 0.48; transform: scale(1.01); }
-      62% { opacity: 0; transform: scale(1.08); }
+
+      0%,
+      100% {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+
+      45% {
+        opacity: 0.48;
+        transform: scale(1.01);
+      }
+
+      62% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
     }
 
     .btn-secondary {
@@ -558,7 +625,10 @@
       flex-wrap: wrap;
     }
 
-    .countdown-item { text-align: center; position: relative; }
+    .countdown-item {
+      text-align: center;
+      position: relative;
+    }
 
     .countdown-box {
       width: clamp(96px, 18vw, 140px);
@@ -630,7 +700,9 @@
       margin-bottom: 30px;
     }
 
-    .about-text h2 span { color: var(--red); }
+    .about-text h2 span {
+      color: var(--red);
+    }
 
     .about-text p {
       font-size: 1.1rem;
@@ -665,8 +737,14 @@
       transition: opacity 0.3s;
     }
 
-    .stat-card:hover::before { opacity: 1; }
-    .stat-card:hover { transform: translateY(-4px); border-color: var(--red); }
+    .stat-card:hover::before {
+      opacity: 1;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--red);
+    }
 
     .stat-num {
       font-family: 'Bebas Neue', sans-serif;
@@ -709,13 +787,18 @@
       width: 100%;
       height: auto;
       object-fit: contain;
-      filter: drop-shadow(0 0 40px rgba(230,57,70,0.8)) drop-shadow(0 0 80px rgba(230,57,70,0.4));
+      filter: drop-shadow(0 0 40px rgba(230, 57, 70, 0.8)) drop-shadow(0 0 80px rgba(230, 57, 70, 0.4));
       transform-origin: 50% 60%;
     }
 
     @keyframes rotateWeb {
-      0% { transform: rotateX(15deg) rotateY(0deg); }
-      100% { transform: rotateX(15deg) rotateY(360deg); }
+      0% {
+        transform: rotateX(15deg) rotateY(0deg);
+      }
+
+      100% {
+        transform: rotateX(15deg) rotateY(360deg);
+      }
     }
 
     /* ===================== TRACKS ===================== */
@@ -750,7 +833,8 @@
     .track-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 3px;
       background: linear-gradient(90deg, var(--red), var(--light-blue));
@@ -768,8 +852,14 @@
       transition: opacity 0.4s;
     }
 
-    .track-card:hover::before { transform: scaleX(1); }
-    .track-card:hover::after { opacity: 1; }
+    .track-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .track-card:hover::after {
+      opacity: 1;
+    }
+
     .track-card:hover {
       transform: perspective(900px) rotateX(var(--tx)) rotateY(var(--ty)) translateY(-8px);
       border-color: rgba(230, 57, 70, 0.3);
@@ -785,7 +875,8 @@
 
     .track-num {
       position: absolute;
-      top: 20px; right: 24px;
+      top: 20px;
+      right: 24px;
       font-family: 'Bebas Neue', sans-serif;
       font-size: 5rem;
       color: rgba(255, 255, 255, 0.04);
@@ -892,7 +983,9 @@
       opacity: 1;
     }
 
-    .timeline-spacer { flex: 1; }
+    .timeline-spacer {
+      flex: 1;
+    }
 
     /* ===================== PRIZES ===================== */
     #prizes {
@@ -926,22 +1019,45 @@
       min-width: 260px;
     }
 
-    .prize-card.gold { border-color: rgba(255, 215, 0, 0.4); transform: perspective(900px) rotateX(var(--tx)) rotateY(var(--ty)) translateY(-20px); }
-    .prize-card.silver { border-color: rgba(192, 192, 192, 0.3); }
-    .prize-card.bronze { border-color: rgba(205, 127, 50, 0.3); }
+    .prize-card.gold {
+      border-color: rgba(255, 215, 0, 0.4);
+      transform: perspective(900px) rotateX(var(--tx)) rotateY(var(--ty)) translateY(-20px);
+    }
+
+    .prize-card.silver {
+      border-color: rgba(192, 192, 192, 0.3);
+    }
+
+    .prize-card.bronze {
+      border-color: rgba(205, 127, 50, 0.3);
+    }
 
     .prize-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
     }
 
-    .prize-card.gold::before { background: linear-gradient(90deg, #FFD700, #FFA500); }
-    .prize-card.silver::before { background: linear-gradient(90deg, #C0C0C0, #808080); }
-    .prize-card.bronze::before { background: linear-gradient(90deg, #CD7F32, #8B4513); }
+    .prize-card.gold::before {
+      background: linear-gradient(90deg, #FFD700, #FFA500);
+    }
 
-    .prize-medal { font-size: 3.5rem; margin-bottom: 16px; display: block; }
+    .prize-card.silver::before {
+      background: linear-gradient(90deg, #C0C0C0, #808080);
+    }
+
+    .prize-card.bronze::before {
+      background: linear-gradient(90deg, #CD7F32, #8B4513);
+    }
+
+    .prize-medal {
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      display: block;
+    }
 
     .prize-place {
       font-family: 'Bebas Neue', sans-serif;
@@ -958,11 +1074,23 @@
       margin-bottom: 20px;
     }
 
-    .prize-card.gold .prize-amount { color: #FFD700; text-shadow: 0 0 30px rgba(255, 215, 0, 0.5); }
-    .prize-card.silver .prize-amount { color: #C0C0C0; }
-    .prize-card.bronze .prize-amount { color: #CD7F32; }
+    .prize-card.gold .prize-amount {
+      color: #FFD700;
+      text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    }
 
-    .prize-perks { list-style: none; }
+    .prize-card.silver .prize-amount {
+      color: #C0C0C0;
+    }
+
+    .prize-card.bronze .prize-amount {
+      color: #CD7F32;
+    }
+
+    .prize-perks {
+      list-style: none;
+    }
+
     .prize-perks li {
       font-size: 0.85rem;
       color: rgba(255, 255, 255, 0.5);
@@ -991,8 +1119,10 @@
     .reg-form-wrap::before {
       content: '';
       position: absolute;
-      top: -100px; right: -100px;
-      width: 300px; height: 300px;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
       background: radial-gradient(circle, rgba(230, 57, 70, 0.1) 0%, transparent 70%);
       pointer-events: none;
     }
@@ -1000,8 +1130,10 @@
     .reg-form-wrap::after {
       content: '';
       position: absolute;
-      bottom: -100px; left: -100px;
-      width: 300px; height: 300px;
+      bottom: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
       background: radial-gradient(circle, rgba(29, 53, 87, 0.2) 0%, transparent 70%);
       pointer-events: none;
     }
@@ -1024,7 +1156,10 @@
       margin-bottom: 50px;
     }
 
-    .form-group { margin-bottom: 28px; position: relative; }
+    .form-group {
+      margin-bottom: 28px;
+      position: relative;
+    }
 
     .form-group label {
       display: block;
@@ -1062,7 +1197,10 @@
       box-shadow: 0 0 20px rgba(230, 57, 70, 0.1);
     }
 
-    .form-group select option { background: #0f0f1a; color: white; }
+    .form-group select option {
+      background: #0f0f1a;
+      color: white;
+    }
 
     .form-grid {
       display: grid;
@@ -1070,7 +1208,10 @@
       gap: 28px;
     }
 
-    .team-size-btns { display: flex; gap: 12px; }
+    .team-size-btns {
+      display: flex;
+      gap: 12px;
+    }
 
     .size-btn {
       flex: 1;
@@ -1122,7 +1263,10 @@
       transition: transform 0.6s;
     }
 
-    .submit-btn:hover::before { transform: translateX(100%); }
+    .submit-btn:hover::before {
+      transform: translateX(100%);
+    }
+
     .submit-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 20px 50px rgba(230, 57, 70, 0.5);
@@ -1134,9 +1278,20 @@
     }
 
     /* SUCCESS STATE */
-    .success-state { display: none; text-align: center; padding: 60px 0; }
-    .success-state.show { display: block; }
-    .success-icon { font-size: 5rem; margin-bottom: 20px; }
+    .success-state {
+      display: none;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .success-state.show {
+      display: block;
+    }
+
+    .success-icon {
+      font-size: 5rem;
+      margin-bottom: 20px;
+    }
 
     .success-state h3 {
       font-family: 'Bebas Neue', sans-serif;
@@ -1146,7 +1301,10 @@
       margin-bottom: 12px;
     }
 
-    .success-state p { color: rgba(255, 255, 255, 0.6); font-size: 1.1rem; }
+    .success-state p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1.1rem;
+    }
 
     /* ===================== FOOTER ===================== */
     footer {
@@ -1166,8 +1324,15 @@
       margin-bottom: 8px;
     }
 
-    footer p { color: rgba(255, 255, 255, 0.3); font-size: 0.85rem; letter-spacing: 2px; }
-    footer span { color: var(--red); }
+    footer p {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+    }
+
+    footer span {
+      color: var(--red);
+    }
 
     /* ===================== SCROLL REVEAL ===================== */
     .reveal {
@@ -1179,10 +1344,21 @@
       will-change: transform, opacity;
     }
 
-    .reveal-up { transform: translate3d(0, 48px, 0) scale(0.96); }
-    .reveal-left { transform: translate3d(-42px, 0, 0) scale(0.96); }
-    .reveal-right { transform: translate3d(42px, 0, 0) scale(0.96); }
-    .reveal-zoom { transform: scale(0.88); }
+    .reveal-up {
+      transform: translate3d(0, 48px, 0) scale(0.96);
+    }
+
+    .reveal-left {
+      transform: translate3d(-42px, 0, 0) scale(0.96);
+    }
+
+    .reveal-right {
+      transform: translate3d(42px, 0, 0) scale(0.96);
+    }
+
+    .reveal-zoom {
+      transform: scale(0.88);
+    }
 
     .reveal.visible {
       opacity: 1;
@@ -1204,29 +1380,55 @@
     }
 
     @keyframes particleFall {
-      0% { transform: translateY(-10px) translateX(0); opacity: 0.6; }
-      100% { transform: translateY(100vh) translateX(var(--drift)); opacity: 0; }
+      0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 0.6;
+      }
+
+      100% {
+        transform: translateY(100vh) translateX(var(--drift));
+        opacity: 0;
+      }
     }
 
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* GLITCH */
-    .glitch { position: relative; display: inline-block; }
+    .glitch {
+      position: relative;
+      display: inline-block;
+    }
 
     .glitch::before,
     .glitch::after {
       content: attr(data-text);
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       font-family: inherit;
       font-size: inherit;
       -webkit-text-fill-color: var(--red);
@@ -1247,13 +1449,37 @@
     }
 
     @keyframes glitch1 {
-      0%, 14%, 15%, 49%, 50%, 99% { transform: translateX(-2px); }
-      15%, 49% { transform: translateX(2px) scaleY(1.02); }
+
+      0%,
+      14%,
+      15%,
+      49%,
+      50%,
+      99% {
+        transform: translateX(-2px);
+      }
+
+      15%,
+      49% {
+        transform: translateX(2px) scaleY(1.02);
+      }
     }
 
     @keyframes glitch2 {
-      0%, 20%, 21%, 62%, 63%, 99% { transform: translateX(2px); }
-      21%, 62% { transform: translateX(-2px) scaleY(0.98); }
+
+      0%,
+      20%,
+      21%,
+      62%,
+      63%,
+      99% {
+        transform: translateX(2px);
+      }
+
+      21%,
+      62% {
+        transform: translateX(-2px) scaleY(0.98);
+      }
     }
 
     /* =====================================================
@@ -1262,9 +1488,18 @@
     @media (max-width: 900px) {
 
       /* --- NAV --- */
-      nav { padding: 14px 20px; }
-      .nav-links { display: none !important; }
-      .nav-logo { font-size: 1.6rem; letter-spacing: 2px; }
+      nav {
+        padding: 14px 20px;
+      }
+
+      .nav-links {
+        display: none !important;
+      }
+
+      .nav-logo {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+      }
 
       /* --- HERO: hero-inner becomes a real vertical flex column --- */
       #hero {
@@ -1299,7 +1534,9 @@
       }
 
       /* Hide desktop spider emblem */
-      .spider-emblem { display: none !important; }
+      .spider-emblem {
+        display: none !important;
+      }
 
       /* Mobile Spider-Man sits directly below text — no position tricks */
       .hero-mobile-img {
@@ -1313,41 +1550,110 @@
       }
 
       @keyframes floatMobile {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-14px); }
+
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-14px);
+        }
       }
 
-      .hero-sub { font-size: 1rem; letter-spacing: 4px; }
-      .venue-text { letter-spacing: 2px; }
-      .hero-btns { flex-wrap: wrap; justify-content: center; }
+      .hero-sub {
+        font-size: 1rem;
+        letter-spacing: 4px;
+      }
+
+      .venue-text {
+        letter-spacing: 2px;
+      }
+
+      .hero-btns {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       .btn-primary,
-      .btn-secondary { padding: 14px 28px; letter-spacing: 2px; }
+      .btn-secondary {
+        padding: 14px 28px;
+        letter-spacing: 2px;
+      }
 
       /* --- LAYOUT --- */
-      .about-grid, .form-grid { grid-template-columns: 1fr; }
-      .tracks-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
 
-      #about, #tracks, #prizes, #register, #timeline { padding: 60px 24px; }
-      #countdown { padding: 60px 24px; }
+      .tracks-grid {
+        grid-template-columns: 1fr 1fr;
+      }
 
-      .countdown-grid { gap: 18px; }
-      .countdown-sep { display: none; }
-      .countdown-num { font-size: 3.4rem; }
-      .section-title { font-size: 2.8rem; letter-spacing: 3px; }
+      #about,
+      #tracks,
+      #prizes,
+      #register,
+      #timeline {
+        padding: 60px 24px;
+      }
 
-      .prizes-grid { flex-direction: column; align-items: center; }
-      .prize-card.gold { transform: perspective(900px) rotateX(var(--tx)) rotateY(var(--ty)); }
+      #countdown {
+        padding: 60px 24px;
+      }
 
-      .timeline-item { gap: 22px; margin-bottom: 36px; }
-      .reg-form-wrap { padding: 40px 28px; }
-      .submit-btn { letter-spacing: 2px; }
-      .timeline-line { display: none; }
+      .countdown-grid {
+        gap: 18px;
+      }
+
+      .countdown-sep {
+        display: none;
+      }
+
+      .countdown-num {
+        font-size: 3.4rem;
+      }
+
+      .section-title {
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+      }
+
+      .prizes-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .prize-card.gold {
+        transform: perspective(900px) rotateX(var(--tx)) rotateY(var(--ty));
+      }
+
+      .timeline-item {
+        gap: 22px;
+        margin-bottom: 36px;
+      }
+
+      .reg-form-wrap {
+        padding: 40px 28px;
+      }
+
+      .submit-btn {
+        letter-spacing: 2px;
+      }
+
+      .timeline-line {
+        display: none;
+      }
 
       .timeline-item,
-      .timeline-item:nth-child(even) { flex-direction: column; }
+      .timeline-item:nth-child(even) {
+        flex-direction: column;
+      }
 
-      .timeline-dot { display: none; }
+      .timeline-dot {
+        display: none;
+      }
     }
 
     /* =====================================================
@@ -1356,9 +1662,18 @@
     @media (max-width: 600px) {
 
       /* --- NAV --- */
-      nav { padding: 12px 14px; }
-      .nav-links { display: none !important; }
-      .nav-logo { font-size: 1.35rem; letter-spacing: 1.5px; }
+      nav {
+        padding: 12px 14px;
+      }
+
+      .nav-links {
+        display: none !important;
+      }
+
+      .nav-logo {
+        font-size: 1.35rem;
+        letter-spacing: 1.5px;
+      }
 
       nav .btn-primary {
         font-size: 0.58rem !important;
@@ -1414,10 +1729,21 @@
       }
 
       /* Orbs: reduce size so they don't eat into layout */
-      .orb-a { width: 100px; height: 100px; }
-      .orb-b { width: 120px; height: 120px; }
+      .orb-a {
+        width: 100px;
+        height: 100px;
+      }
 
-      .devhive-tag { font-size: 0.6rem; letter-spacing: 2.5px; margin-bottom: 10px; }
+      .orb-b {
+        width: 120px;
+        height: 120px;
+      }
+
+      .devhive-tag {
+        font-size: 0.6rem;
+        letter-spacing: 2.5px;
+        margin-bottom: 10px;
+      }
 
       .hero-title {
         font-size: clamp(2.8rem, 16vw, 4.4rem);
@@ -1425,10 +1751,21 @@
         line-height: 0.95;
       }
 
-      .hero-sub { font-size: 0.75rem; letter-spacing: 2.2px; margin: 10px 0 6px; }
-      .hero-hr { margin: 10px auto; }
+      .hero-sub {
+        font-size: 0.75rem;
+        letter-spacing: 2.2px;
+        margin: 10px 0 6px;
+      }
 
-      .venue-text { font-size: 0.78rem; letter-spacing: 1px; margin: 6px 0 18px; }
+      .hero-hr {
+        margin: 10px auto;
+      }
+
+      .venue-text {
+        font-size: 0.78rem;
+        letter-spacing: 1px;
+        margin: 6px 0 18px;
+      }
 
       .hero-btns {
         flex-direction: row;
@@ -1437,17 +1774,32 @@
         flex-wrap: wrap;
       }
 
-      .btn-primary, .btn-secondary {
+      .btn-primary,
+      .btn-secondary {
         font-size: 0.68rem;
         letter-spacing: 1.2px;
         padding: 12px 18px;
       }
 
       /* --- SECTIONS --- */
-      #countdown, #about, #tracks, #prizes, #register, #timeline { padding: 48px 14px; }
+      #countdown,
+      #about,
+      #tracks,
+      #prizes,
+      #register,
+      #timeline {
+        padding: 48px 14px;
+      }
 
-      .section-title { font-size: 2.1rem; letter-spacing: 2px; }
-      .section-sub { letter-spacing: 1.4px; margin-bottom: 34px; }
+      .section-title {
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+      }
+
+      .section-sub {
+        letter-spacing: 1.4px;
+        margin-bottom: 34px;
+      }
 
       .countdown-grid {
         display: grid;
@@ -1455,51 +1807,155 @@
         gap: 12px;
       }
 
-      .countdown-item { width: 100%; }
-      .countdown-box { width: 100%; max-width: 130px; margin: 0 auto; }
-      .countdown-num { font-size: clamp(2.7rem, 11vw, 3.2rem); }
-      .countdown-label { letter-spacing: 2px; }
+      .countdown-item {
+        width: 100%;
+      }
 
-      .about-text h2 { font-size: 2.6rem; margin-bottom: 18px; }
-      .about-text p { font-size: 1rem; line-height: 1.7; }
-      .stat-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      .about-visual { display: none; }
+      .countdown-box {
+        width: 100%;
+        max-width: 130px;
+        margin: 0 auto;
+      }
 
-      .tracks-grid { grid-template-columns: 1fr; }
-      .track-card { padding: 30px 18px; }
-      .track-card h3 { font-size: 1.5rem; letter-spacing: 2px; }
+      .countdown-num {
+        font-size: clamp(2.7rem, 11vw, 3.2rem);
+      }
 
-      .timeline-content { padding: 18px 16px; }
+      .countdown-label {
+        letter-spacing: 2px;
+      }
+
+      .about-text h2 {
+        font-size: 2.6rem;
+        margin-bottom: 18px;
+      }
+
+      .about-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .stat-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .about-visual {
+        display: none;
+      }
+
+      .tracks-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .track-card {
+        padding: 30px 18px;
+      }
+
+      .track-card h3 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+      }
+
+      .timeline-content {
+        padding: 18px 16px;
+      }
 
       .timeline-item.reveal-left,
-      .timeline-item.reveal-right { transform: translate3d(0, 32px, 0) scale(0.98); }
+      .timeline-item.reveal-right {
+        transform: translate3d(0, 32px, 0) scale(0.98);
+      }
 
-      .prize-card { width: 100%; min-width: 0; padding: 38px 20px; }
+      .prize-card {
+        width: 100%;
+        min-width: 0;
+        padding: 38px 20px;
+      }
 
-      .form-title { font-size: 2.2rem; letter-spacing: 2.5px; }
-      .form-subtitle { font-size: 0.72rem; letter-spacing: 1.2px; margin-bottom: 28px; }
-      .reg-form-wrap { padding: 26px 14px; }
-      .form-group { margin-bottom: 20px; }
-      .form-group label { font-size: 0.64rem; letter-spacing: 2px; }
-      .form-group input, .form-group select { padding: 14px 12px; font-size: 0.95rem; }
-      .team-size-btns { gap: 8px; }
-      .size-btn { padding: 12px 8px; font-size: 1rem; }
-      .submit-btn { padding: 15px; font-size: 0.83rem; letter-spacing: 1.3px; }
+      .form-title {
+        font-size: 2.2rem;
+        letter-spacing: 2.5px;
+      }
 
-      footer { padding: 34px 14px; }
-      footer .footer-logo { font-size: 2.3rem; letter-spacing: 3px; }
-      footer p { font-size: 0.78rem; letter-spacing: 1px; }
+      .form-subtitle {
+        font-size: 0.72rem;
+        letter-spacing: 1.2px;
+        margin-bottom: 28px;
+      }
+
+      .reg-form-wrap {
+        padding: 26px 14px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        font-size: 0.64rem;
+        letter-spacing: 2px;
+      }
+
+      .form-group input,
+      .form-group select {
+        padding: 14px 12px;
+        font-size: 0.95rem;
+      }
+
+      .team-size-btns {
+        gap: 8px;
+      }
+
+      .size-btn {
+        padding: 12px 8px;
+        font-size: 1rem;
+      }
+
+      .submit-btn {
+        padding: 15px;
+        font-size: 0.83rem;
+        letter-spacing: 1.3px;
+      }
+
+      footer {
+        padding: 34px 14px;
+      }
+
+      footer .footer-logo {
+        font-size: 2.3rem;
+        letter-spacing: 3px;
+      }
+
+      footer p {
+        font-size: 0.78rem;
+        letter-spacing: 1px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .reveal, .motion-3d, .spider-emblem, .web-3d,
-      .particle, .loader-core, .loader-core::before, .loader-core::after {
+
+      .reveal,
+      .motion-3d,
+      .spider-emblem,
+      .web-3d,
+      .particle,
+      .loader-core,
+      .loader-core::before,
+      .loader-core::after {
         animation: none !important;
         transition: none !important;
       }
 
-      .cta-beat, .cta-beat::after { animation: none !important; }
-      .track-card, .timeline-content, .prize-card { transform: none !important; }
+      .cta-beat,
+      .cta-beat::after {
+        animation: none !important;
+      }
+
+      .track-card,
+      .timeline-content,
+      .prize-card {
+        transform: none !important;
+      }
     }
   </style>
 </head>
@@ -1524,13 +1980,17 @@
       <li><a href="#tracks">Tracks</a></li>
       <li><a href="#timeline">Schedule</a></li>
       <li><a href="#prizes">Prizes</a></li>
-      <li><a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge" target="_blank" rel="noopener noreferrer">Register</a></li>
+      <li><a
+          href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
+          target="_blank" rel="noopener noreferrer">Register</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:12px;">
       <a href="https://diwakar-011.github.io/SPIN-/" target="_blank" rel="noopener noreferrer" class="btn-spin">
         <i class="spin-icon">✦</i> Spin
       </a>
-      <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge" target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat" style="font-size:0.7rem; padding:12px 28px;">Register Now</a>
+      <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
+        target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat"
+        style="font-size:0.7rem; padding:12px 28px;">Register Now</a>
     </div>
   </nav>
 
@@ -1560,14 +2020,14 @@
         <div class="hero-hr"><span>◈</span></div>
         <div class="venue-text">Venue: <span>CGC University, Mohali</span></div>
         <div class="hero-btns">
-          <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge" target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat">Register Now</a>
+          <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
+            target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat">Register Now</a>
           <a href="#about" class="btn-secondary">Learn More</a>
         </div>
       </div>
 
       <!-- Mobile Spider-Man — lives INSIDE hero-inner so it flows below text naturally -->
-      <img src="Miles_Morales_fanart___Spider-Man-removebg-preview.png" alt="Spider-Man" class="hero-mobile-img"
-        loading="eager" decoding="async" />
+      <img src="spiderman.png" alt="Spider-Man" class="hero-mobile-img" loading="eager" decoding="async" />
     </div>
   </section>
 
@@ -1577,22 +2037,30 @@
     <div class="section-sub reveal">The clock is ticking, Spider</div>
     <div class="countdown-grid reveal">
       <div class="countdown-item">
-        <div class="countdown-box"><div class="countdown-num" id="cd-days">00</div></div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="cd-days">00</div>
+        </div>
         <div class="countdown-label">Days</div>
       </div>
       <div class="countdown-sep">:</div>
       <div class="countdown-item">
-        <div class="countdown-box"><div class="countdown-num" id="cd-hours">00</div></div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="cd-hours">00</div>
+        </div>
         <div class="countdown-label">Hours</div>
       </div>
       <div class="countdown-sep">:</div>
       <div class="countdown-item">
-        <div class="countdown-box"><div class="countdown-num" id="cd-mins">00</div></div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="cd-mins">00</div>
+        </div>
         <div class="countdown-label">Minutes</div>
       </div>
       <div class="countdown-sep">:</div>
       <div class="countdown-item">
-        <div class="countdown-box"><div class="countdown-num" id="cd-secs">00</div></div>
+        <div class="countdown-box">
+          <div class="countdown-num" id="cd-secs">00</div>
+        </div>
         <div class="countdown-label">Seconds</div>
       </div>
     </div>
@@ -1609,16 +2077,29 @@
         <p>Build something that bends reality. Hack something that rewrites the rules. Leave something behind that the
           world will never forget.</p>
         <div class="stat-grid">
-          <div class="stat-card tilt-card"><div class="stat-num">24</div><div class="stat-label">Hours of Hacking</div></div>
-          <div class="stat-card tilt-card"><div class="stat-num">2–4</div><div class="stat-label">Members per Team</div></div>
-          <div class="stat-card tilt-card"><div class="stat-num">∞</div><div class="stat-label">Possibilities</div></div>
-          <div class="stat-card tilt-card"><div class="stat-num">CGC</div><div class="stat-label">University, Mohali</div></div>
+          <div class="stat-card tilt-card">
+            <div class="stat-num">24</div>
+            <div class="stat-label">Hours of Hacking</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-num">2–4</div>
+            <div class="stat-label">Members per Team</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Possibilities</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-num">CGC</div>
+            <div class="stat-label">University, Mohali</div>
+          </div>
         </div>
       </div>
       <div class="about-visual reveal">
         <div class="web-3d-container">
           <div class="web-3d">
-            <img src="download-removebg-preview.png" alt="Spider-Man" class="about-spidey-img" loading="eager" decoding="async" />
+            <img src="miles-removebg-preview.png" alt="Spider-Man" class="about-spidey-img" loading="eager"
+              decoding="async" />
           </div>
         </div>
       </div>
@@ -1634,61 +2115,71 @@
         <div class="track-num">01</div>
         <span class="track-icon">🌐</span>
         <h3>ML</h3>
-        <p>Design intelligent systems that learn from data to solve real-world problems. Build predictive models, recommendation systems, and smart applications using modern ML frameworks and tools.</p>
+        <p>Design intelligent systems that learn from data to solve real-world problems. Build predictive models,
+          recommendation systems, and smart applications using modern ML frameworks and tools.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">02</div>
         <span class="track-icon">🔐</span>
         <h3>Cyber</h3>
-        <p>Explore cybersecurity by identifying vulnerabilities, building defense mechanisms, and developing ethical hacking solutions to protect systems, networks, and data from digital threats.</p>
+        <p>Explore cybersecurity by identifying vulnerabilities, building defense mechanisms, and developing ethical
+          hacking solutions to protect systems, networks, and data from digital threats.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">03</div>
         <span class="track-icon">🔗</span>
         <h3>Blockchain Web3</h3>
-        <p>Create decentralized applications (dApps), smart contracts, and Web3 platforms that enhance transparency, security, and trust in digital ecosystems.</p>
+        <p>Create decentralized applications (dApps), smart contracts, and Web3 platforms that enhance transparency,
+          security, and trust in digital ecosystems.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">04</div>
         <span class="track-icon">⌨️</span>
         <h3>Iot</h3>
-        <p>Connect the physical and digital worlds by building smart devices and systems that collect, analyze, and act on real-time data for automation and efficiency.</p>
+        <p>Connect the physical and digital worlds by building smart devices and systems that collect, analyze, and act
+          on real-time data for automation and efficiency.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">05</div>
         <span class="track-icon">🌐</span>
         <h3>Data science</h3>
-        <p>Analyze and interpret complex data to extract meaningful insights. Use statistics, visualization, and machine learning to drive decisions across industries like healthcare, finance, and education.</p>
+        <p>Analyze and interpret complex data to extract meaningful insights. Use statistics, visualization, and machine
+          learning to drive decisions across industries like healthcare, finance, and education.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">06</div>
         <span class="track-icon">🤖</span>
         <h3>Robotics and automation</h3>
-        <p>Develop intelligent machines and automated systems that can perform tasks with precision, efficiency, and minimal human intervention.</p>
+        <p>Develop intelligent machines and automated systems that can perform tasks with precision, efficiency, and
+          minimal human intervention.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">07</div>
         <span class="track-icon">🔎</span>
         <h3>Chatbots and ai</h3>
-        <p>Build conversational AI systems and chatbots that interact naturally with users, automate workflows, and enhance user experiences across platforms.</p>
+        <p>Build conversational AI systems and chatbots that interact naturally with users, automate workflows, and
+          enhance user experiences across platforms.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">08</div>
         <span class="track-icon">💻</span>
         <h3>Cloud computing and devops</h3>
-        <p>Design scalable applications using cloud platforms while implementing DevOps practices for continuous integration, deployment, and efficient system management.</p>
+        <p>Design scalable applications using cloud platforms while implementing DevOps practices for continuous
+          integration, deployment, and efficient system management.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">09</div>
         <span class="track-icon">💡</span>
         <h3>AR/VR</h3>
-        <p>Create immersive digital experiences by blending virtual elements with the real world or building fully interactive virtual environments.</p>
+        <p>Create immersive digital experiences by blending virtual elements with the real world or building fully
+          interactive virtual environments.</p>
       </div>
       <div class="track-card reveal tilt-card">
         <div class="track-num">10</div>
         <span class="track-icon">🪙</span>
         <h3>Cryptography</h3>
-        <p>Secure information through encryption techniques, ensuring data privacy, integrity, and authentication in digital communication systems.</p>
+        <p>Secure information through encryption techniques, ensuring data privacy, integrity, and authentication in
+          digital communication systems.</p>
       </div>
     </div>
   </section>
@@ -1788,12 +2279,12 @@
       <div class="timeline-spacer"></div>
     </div>
 
-     <div class="timeline-item reveal reveal-right">
+    <div class="timeline-item reveal reveal-right">
       <div class="timeline-spacer"></div>
       <div class="timeline-dot"></div>
       <div class="timeline-content tilt-card">
         <div class="timeline-time">Day 2 — 10:00 AM - 01:00 PM</div>
-        <h3>Announcement Judging Round  </h3>
+        <h3>Announcement Judging Round </h3>
         <p>Teams prepare for final presentations.</p>
       </div>
   </section>
@@ -1806,25 +2297,34 @@
       <div class="prize-card silver reveal tilt-card">
         <span class="prize-medal">🥈</span>
         <div class="prize-place">2nd Place</div>
-        <div class="prize-amount">₹5K</div>
+        <div class="prize-amount">₹15K</div>
         <ul class="prize-perks">
-          <li>Silver Trophy</li><li>Goodies Hamper</li><li>Certificates</li><li>Recognition</li>
+          <li>Silver Trophy</li>
+          <li>Goodies Hamper</li>
+          <li>Certificates</li>
+          <li>Recognition</li>
         </ul>
       </div>
       <div class="prize-card gold reveal tilt-card">
         <span class="prize-medal">🏆</span>
         <div class="prize-place">Grand Champion</div>
-        <div class="prize-amount">₹10K</div>
+        <div class="prize-amount">₹20K</div>
         <ul class="prize-perks">
-          <li>Gold Trophy</li><li>Exclusive Swag Box</li><li>Certificates + Letter of Rec</li><li>Hall of Fame Entry</li>
+          <li>Gold Trophy</li>
+          <li>Exclusive Swag Box</li>
+          <li>Certificates + Letter of Rec</li>
+          <li>Hall of Fame Entry</li>
         </ul>
       </div>
       <div class="prize-card bronze reveal tilt-card">
         <span class="prize-medal">🥉</span>
         <div class="prize-place">3rd Place</div>
-        <div class="prize-amount">₹3K</div>
+        <div class="prize-amount">₹10K</div>
         <ul class="prize-perks">
-          <li>Bronze Trophy</li><li>Goodies Pack</li><li>Certificates</li><li>Recognition</li>
+          <li>Bronze Trophy</li>
+          <li>Goodies Pack</li>
+          <li>Certificates</li>
+          <li>Recognition</li>
         </ul>
       </div>
     </div>
@@ -1840,7 +2340,9 @@
         To participate in CypherVerse, please register your team through our official partner platform.<br><br>
         <strong>Click the button below to register on Unstop:</strong>
       </p>
-      <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge" target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat" style="font-size:1.1rem;padding:18px 44px;margin-bottom:18px;">Register on Unstop</a>
+      <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
+        target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat"
+        style="font-size:1.1rem;padding:18px 44px;margin-bottom:18px;">Register on Unstop</a>
       <p style="color:rgba(255,255,255,0.7);font-size:1rem;max-width:600px;margin:0 auto;">
         <b>How it works:</b><br>
         1. Click the registration button above.<br>
@@ -1948,19 +2450,19 @@
     // COUNTDOWN — Target: April 4, 2026 00:00:00 IST (UTC+5:30)
     const targetDate = new Date('2026-04-04T00:00:00+05:30');
     const cdEls = {
-      days:  document.getElementById('cd-days'),
+      days: document.getElementById('cd-days'),
       hours: document.getElementById('cd-hours'),
-      mins:  document.getElementById('cd-mins'),
-      secs:  document.getElementById('cd-secs')
+      mins: document.getElementById('cd-mins'),
+      secs: document.getElementById('cd-secs')
     };
     function updateCountdown() {
       const diff = targetDate - Date.now();
       if (diff <= 0) {
         // Hackathon is LIVE — flash "LIVE" across the boxes
-        cdEls.days.textContent  = 'LI';
+        cdEls.days.textContent = 'LI';
         cdEls.hours.textContent = 'VE';
-        cdEls.mins.textContent  = '🕷';
-        cdEls.secs.textContent  = '🕷';
+        cdEls.mins.textContent = '🕷';
+        cdEls.secs.textContent = '🕷';
         Object.values(cdEls).forEach(el => {
           el.style.color = '#ff2d55';
           el.style.textShadow = '0 0 30px rgba(255,45,85,1)';
@@ -1968,10 +2470,10 @@
         });
         return;
       }
-      cdEls.days.textContent  = String(Math.floor(diff / 86400000)).padStart(2, '0');
+      cdEls.days.textContent = String(Math.floor(diff / 86400000)).padStart(2, '0');
       cdEls.hours.textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
-      cdEls.mins.textContent  = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
-      cdEls.secs.textContent  = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
+      cdEls.mins.textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
+      cdEls.secs.textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
     }
     updateCountdown();
     setInterval(updateCountdown, 1000);
@@ -2061,4 +2563,5 @@
     }
   </script>
 </body>
+
 </html>
