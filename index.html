@@ -1113,6 +1113,224 @@
       color: rgba(255, 255, 255, 0.6);
     }
 
+    /* ===================== SPIN DIRECTIVES SECTION ===================== */
+    #spin-directives {
+      position: relative;
+      z-index: 1;
+      padding: 90px 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .spin-banner-wrap {
+      background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.12), transparent 45%),
+                  radial-gradient(circle at bottom left, rgba(230, 57, 70, 0.15), transparent 50%),
+                  var(--card-bg);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      padding: 50px 40px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(0, 240, 255, 0.05);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .spin-banner-wrap::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #00f0ff, var(--red), #00f0ff);
+      background-size: 200% 100%;
+      animation: gradientShift 4s linear infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    .spin-badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      color: #00f0ff;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .spin-content-left h2 {
+      font-family: 'Bebas Neue', 'Impact', sans-serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      letter-spacing: 3px;
+      line-height: 1.05;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .spin-content-left h2 span {
+      color: #00f0ff;
+      text-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+    }
+
+    .spin-content-left p {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 24px;
+    }
+
+    .spin-feature-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .spin-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.85);
+      font-family: 'Orbitron', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 1px;
+      border-radius: 3px;
+    }
+
+    .spin-pill b {
+      color: #00f0ff;
+    }
+
+    .btn-spin-launch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 36px;
+      background: linear-gradient(135deg, #00f0ff 0%, #1a56db 50%, var(--red) 100%);
+      color: #ffffff;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+      border: 1px solid rgba(0, 240, 255, 0.6);
+      box-shadow: 0 8px 30px rgba(0, 240, 255, 0.35);
+      transition: all 0.35s;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .btn-spin-launch:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(0, 240, 255, 0.6);
+      border-color: #ffffff;
+      filter: brightness(1.15);
+    }
+
+    .spin-visual-card {
+      background: rgba(8, 8, 15, 0.85);
+      border: 1px solid rgba(0, 240, 255, 0.25);
+      border-radius: 6px;
+      padding: 24px;
+      position: relative;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .spin-visual-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 10px;
+    }
+
+    .spin-live-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      color: #00f0ff;
+    }
+
+    .spin-dot-pulse {
+      width: 8px;
+      height: 8px;
+      background: #00f0ff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00f0ff;
+      animation: pulseLoader 1.5s infinite;
+    }
+
+    .spin-preview-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .spin-preview-row span.label {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.68rem;
+      color: rgba(255, 255, 255, 0.4);
+      letter-spacing: 1.5px;
+    }
+
+    .spin-preview-row span.val {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+      .spin-banner-wrap {
+        grid-template-columns: 1fr;
+        padding: 32px 20px;
+        text-align: center;
+        gap: 28px;
+      }
+
+      .spin-badge-tag {
+        margin: 0 auto 14px;
+      }
+
+      .spin-feature-pills {
+        justify-content: center;
+      }
+
+      .btn-spin-launch {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 15px 20px;
+      }
+    }
+
     /* ===================== TIMELINE ===================== */
     #timeline {
       position: relative;
@@ -1874,6 +2092,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#spin-directives">Spin Directives</a></li>
       <li><a href="#timeline">Schedule</a></li>
       <li><a href="#prizes">Prizes</a></li>
       <li><a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
@@ -1882,6 +2101,12 @@
 
     <!-- Nav Actions -->
     <div class="nav-actions">
+      <a href="https://spin-section-cypherverse.vercel.app/"
+        target="_blank" rel="noopener noreferrer" class="btn-spin"
+        title="Open Spider Mission Directives Generator">
+        <span class="spin-icon">🕸️</span> Spin PS
+      </a>
+
       <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
         target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat"
         style="font-size:0.75rem; padding:10px 22px;">Register Now</a>
@@ -1907,9 +2132,10 @@
       <ul class="mobile-nav-links">
         <li><a href="#about" class="drawer-link"><span>01. About</span> <span>→</span></a></li>
         <li><a href="#tracks" class="drawer-link"><span>02. Tracks</span> <span>→</span></a></li>
-        <li><a href="#timeline" class="drawer-link"><span>03. Schedule</span> <span>→</span></a></li>
-        <li><a href="#prizes" class="drawer-link"><span>04. Prizes</span> <span>→</span></a></li>
-        <li><a href="#register" class="drawer-link"><span>05. Register</span> <span>→</span></a></li>
+        <li><a href="https://spin-section-cypherverse.vercel.app/" target="_blank" rel="noopener noreferrer" class="drawer-link" style="color:var(--neon-cyan);"><span><span class="spin-icon" style="display:inline-block; animation:spinIcon 2.2s linear infinite;">🕸️</span> 03. Spin Directives</span> <span>↗</span></a></li>
+        <li><a href="#timeline" class="drawer-link"><span>04. Schedule</span> <span>→</span></a></li>
+        <li><a href="#prizes" class="drawer-link"><span>05. Prizes</span> <span>→</span></a></li>
+        <li><a href="#register" class="drawer-link"><span>06. Register</span> <span>→</span></a></li>
       </ul>
     </div>
 
@@ -1941,6 +2167,11 @@
         <div class="hero-btns">
           <a href="https://unstop.com/o/nJBfv51?lb=vomL5P0m&utm_medium=Share&utm_source=devhivem90893&utm_campaign=Online_coding_challenge"
             target="_blank" rel="noopener noreferrer" class="btn-primary cta-beat">Register on Unstop</a>
+          <a href="https://spin-section-cypherverse.vercel.app/"
+            target="_blank" rel="noopener noreferrer" class="btn-spin"
+            style="padding:14px 24px; font-size:0.8rem;">
+            <span class="spin-icon">🕸️</span> Spin Directives
+          </a>
           <a href="#about" class="btn-secondary">Explore Hack</a>
         </div>
 
@@ -2107,6 +2338,68 @@
         <span class="track-icon">🪙</span>
         <h3>Open Innovation</h3>
         <p>Break the mold! Tackle novel challenges, build disruptive tools, and construct groundbreaking ideas that defy categorization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPIN DIRECTIVES / MISSION GENERATOR SECTION -->
+  <section id="spin-directives" data-parallax="0.025">
+    <div class="section-title reveal">SPIN YOUR DIRECTIVE</div>
+    <div class="section-sub reveal">Spider Mission Directives Generator</div>
+    
+    <div class="spin-banner-wrap reveal tilt-card">
+      <div class="spin-content-left">
+        <div class="spin-badge-tag">
+          <span>🕷️</span> MISSION DIRECTIVES ENGINE
+        </div>
+        <h2>LOCK YOUR <span>HACKATHON PROBLEM</span></h2>
+        <p>
+          Step into the Spider-Verse Directives Portal! Enter your team details, select your operation domain across 11 multiverse tracks, and spin real-time problem statements directly from the web.
+        </p>
+
+        <div class="spin-feature-pills">
+          <div class="spin-pill"><b>⚡ 11</b> Domains</div>
+          <div class="spin-pill"><b>🕸️ Real-Time</b> Spin Engine</div>
+          <div class="spin-pill"><b>📑 Team</b> Mission Dossier</div>
+          <div class="spin-pill"><b>🔒 Multiverse</b> Lock</div>
+        </div>
+
+        <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+          <a href="https://spin-section-cypherverse.vercel.app/"
+            target="_blank" rel="noopener noreferrer" class="btn-spin-launch cta-beat">
+            <span class="spin-icon">🕸️</span> OPEN MISSION GENERATOR <span style="font-size:1.1rem;">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="spin-visual-card">
+        <div class="spin-visual-header">
+          <div class="spin-live-indicator">
+            <div class="spin-dot-pulse"></div>
+            <span>LIVE GENERATOR</span>
+          </div>
+          <span style="font-family:'Orbitron', monospace; font-size:0.68rem; color:rgba(255,255,255,0.4);">v2.4 PORTAL</span>
+        </div>
+
+        <div class="spin-preview-row">
+          <span class="label">ASSIGNED PLATFORM</span>
+          <span class="val" style="color:var(--neon-cyan); font-family:'Orbitron', monospace; font-size:0.78rem;">SPIN-SECTION-CYPHERVERSE</span>
+        </div>
+
+        <div class="spin-preview-row">
+          <span class="label">CAPABILITIES</span>
+          <span class="val">AI/ML • Web3 • CyberSec • IoT • Agentic AI</span>
+        </div>
+
+        <div class="spin-preview-row">
+          <span class="label">STATUS</span>
+          <span class="val" style="color:#00ff88;">● READY FOR TEAMS</span>
+        </div>
+
+        <a href="https://spin-section-cypherverse.vercel.app/"
+          target="_blank" rel="noopener noreferrer" class="btn-spin" style="width:100%; justify-content:center; padding:10px 0; margin-top:8px;">
+          <span class="spin-icon">🕸️</span> Click to Spin Now
+        </a>
       </div>
     </div>
   </section>
